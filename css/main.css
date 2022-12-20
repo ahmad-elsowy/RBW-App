@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+
+
+
+/*------------   start header ----------------------- */
+.main-body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* ------------------- */
+.main-body .nav-bar   {
+    width: 300px;
+    height: 100vh;
+    background-color: #7cabb5;  
+}
+
+
+.nav-bar .links{
+    list-style: none;
+    padding: 60px 20px ;
+}
+.nav-bar .links li{
+    margin-bottom: 20px;   
+}
+.nav-bar .links li a::before{
+    content: '';
+    position:absolute;
+    background-color:#00204c ;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    transition: 0.3s;
+}
+.nav-bar .links li a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    transition: 0.3s;
+
+}
+.nav-bar .links li a:hover::before{
+    width: 60%;
+}
+.nav-bar .links li a:hover{
+    color: #00204c;
+}
+.nav-bar .links li a.active{
+    color: #00204c;
+}
+/* ------------------------------ */
+
+
+.main-body .right   {
+    flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+header{
+    background-color: #aaaaaa;
+    padding: 10px ;
+    text-align: right;
+    position: sticky;
+    box-shadow: 7px 5px 3px #aaa5;
+    height: 70px;
+    width: 100%;
+}
+header a{ 
+    color: #fff;  
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 220px;
+}
+
+ .video{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    width: 100%;
+    
+}
+ .video div{
+    width: 40%;
+    height: 40vh;
+    border-radius: 6px;
+}
+.video div.v1{
+    background-color: blue;
+}
+.video div.v2{
+    background-color: green;
+}
+
+
+.joystick{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+
+    /* align-self: flex-end;
+    margin-right:100px ; */
+margin-top:20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.joystick .handler{
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius:50% ;
+    cursor: pointer;
+}
